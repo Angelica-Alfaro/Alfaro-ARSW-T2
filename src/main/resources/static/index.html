@@ -8,6 +8,9 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="/weathermap.js"></script>
+    <script src="/app.js"></script>
+    <script src="apiclient.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
@@ -19,20 +22,21 @@
         <br>
         <p>
             <input id="city" type="text" placeholder="Nombre de la ciudad" class="nameCity">
-            <button type="button" class="btn btn-outline-primary">Buscar</button>
+            <button type="button" class="btn btn-outline-primary" onclick="app.getWeatherByCity($('#city').val())">Buscar</button>
         </p>
     </center>
     <table class="table table-striped">
+        <thead>
         <tr>
             <th scope="col">País</th>
             <th scope="col">Ciudad</th>
             <th scope="col">Clima</th>
             <th scope="col">Descripción</th>
             <th scope="col">Temperatura (°C)</th>
-            <th scope="col">Sensación térmica (°C)</th>
         </tr>
         </thead>
     </table>
+    <div id="map"></div>
 </div>
 </body>
 </html>

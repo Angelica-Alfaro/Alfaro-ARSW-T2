@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,15 +25,15 @@ public class OpenWeatherController {
      * Obtiene los datos climáticos de una ciudad
      * @param nombre de la ciudad
      * @return Un formato JSON con la información de de datos climáticos
+     * @throws UnsupportedEncodingException 
      **/
     @GetMapping("/{nombre}")
     public ResponseEntity<?> getWeatherByCity(@PathVariable String nombre) {
         try {
             return new ResponseEntity<>(weatherServices.getWeatherByCity(nombre), HttpStatus.ACCEPTED);
-        } catch (WeatherServiceException ex) {
+        } catch (WeatherServiceException | UnsupportedEncodingException ex) {
             Logger.getLogger(OpenWeatherController.class.getName()).log(Level.SEVERE, null, ex);
             return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
-        }
-    }
-
+        }	
+   }
 }
