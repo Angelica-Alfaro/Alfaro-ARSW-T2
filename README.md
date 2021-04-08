@@ -1,5 +1,10 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
+### 💡 Instrucciones
+1. Clonar el repositorio
+2. Escribir el comando **mvn package** y **mvn spring-boot:run** para poder ejecutarlo
+3. Escribir en el navegador web **localhost:8080** para poder utilizar la aplicación de manera local
+
 ## Preparación para el Parcial
 
 Con el objetivo de preparar el examen final del segundo tercio, por favor siga las siguientes instrucciones.
