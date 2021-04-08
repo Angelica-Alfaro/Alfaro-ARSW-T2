@@ -16,7 +16,7 @@ import java.util.List;
 
 public class UnirestTest {
 
-    @Test
+    /*@Test
     public void shouldFetchAllCitiesWeatherData() throws UnirestException {
         List<String> cities = new ArrayList<>();
         cities.add("London");
@@ -32,6 +32,6 @@ public class UnirestTest {
             assertEquals((int) HttpStatus.SC_OK, response.getStatus());
         }
 
-    }
+    }*/
 
 }

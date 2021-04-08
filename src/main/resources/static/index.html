@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+<div class="container">
+    <br>
+    <center>
+        <h2>Bienvenido a Open Weather!</h2>
+        <h4>Aquí se encontrará información acerca del clima para una ciudad</h4>
+        <br>
+        <p>
+            <input id="city" type="text" placeholder="Nombre de la ciudad" class="nameCity">
+            <button type="button" class="btn btn-outline-primary">Buscar</button>
+        </p>
+    </center>
+    <table class="table table-striped">
+        <tr>
+            <th scope="col">País</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Clima</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Temperatura (°C)</th>
+            <th scope="col">Sensación térmica (°C)</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>
