@@ -1,9 +1,11 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
 ### 💡 Instrucciones
+Para utilizar la aplicación de manera local:
 1. Clonar el repositorio
 2. Escribir el comando **mvn package** y **mvn spring-boot:run** para poder ejecutarlo
-3. Escribir en el navegador web **localhost:8080** para poder utilizar la aplicación de manera local
+3. En **apliclient** cambiar **despliegue** por **localhost** en la url
+4. Escribir en el navegador web **localhost:8080**
 
 #### 🚀 Despliegue en Heroku: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arsw-weather.herokuapp.com/)
 
